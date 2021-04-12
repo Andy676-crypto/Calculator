@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculationsComponent implements OnInit {
 
+  public val: number;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.val = 24;
   }
 
+  sum(): void{
+
+   console.log('test', this.val);
+
+  }
 }
